@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const myfirstelement = (
+  <div>
+    <h1>We are rendering this myfirstelement in the React DOM</h1>
+    <h1>We must render multiple things inside a parent element like a div</h1>
+    <h1>
+      This index.js file is being run inside the root div element in the
+      index.html file.
+    </h1>
+  </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// JS comments work here
+
+ReactDOM.render(myfirstelement, document.getElementById("root"));
